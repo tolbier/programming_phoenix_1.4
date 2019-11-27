@@ -49,4 +49,16 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 * Run Server
 
       mix phx.server
-                   
+
+* enter into Rumble console 
+ 
+      iex -S mix
+      iex> alias Rumble.Accounts
+      iex> alias Rumble.Accounts.User
+      iex> Accounts.list_users()
+      iex> Accounts.get_user("1")
+      iex> Accounts.get_user_by(name: "Bruce")
+      
+      
+        
+      
