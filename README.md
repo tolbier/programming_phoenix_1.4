@@ -60,5 +60,26 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       iex> Accounts.get_user_by(name: "Bruce")
       
       
-        
+## Ecto and Changesets
+      
+* Add a Migration       
+
+      $ mix ecto.gen.migration create_users
+      
+* After create table on migration file      
+      
+      $ mix ecto.migrate
+      
+* Create & migrate for TEST
+
+      MIX_ENV=test mix ecto.create
+      MIX_ENV=test mix ecto.migrate
+      
+* Insert elements through iex/mix console            
+      $ iex -S mix 
+      iex> alias Rumbl.Repo
+      iex> alias Rumbl.Accounts.User
+      iex> Repo.insert(%User{name: "José", username: "josevalim"}) 
+      iex> Repo.insert(%User{name: "Bruce", username: "redrapids"}) 
+      iex> Repo.insert(%User{name: "Chris", username: "mccord"}) 
       

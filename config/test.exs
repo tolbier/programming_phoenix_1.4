@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :rumbl, Rumbl.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "decangues",
   database: "rumbl_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
