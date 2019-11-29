@@ -59,6 +59,9 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       iex> Accounts.get_user("1")
       iex> Accounts.get_user_by(name: "Bruce")
       
+* Show Routes
+
+    $ mix phx.routes      
       
 ## Ecto and Changesets
       
