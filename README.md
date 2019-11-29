@@ -90,3 +90,15 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 * Obtain Dependencies
 
       mix deps.get      
+      
+* Update all passwords
+
+      $ iex -S mix 
+      iex(1)> alias Rumbl.Repo
+      iex(2)> alias Rumbl.Accounts.User
+      iex(3)> alias RumblWeb.Router.Helpers, as: Routes
+      iex(4)> for u <- Repo.all(User) do                                           
+      ...(4)>   Repo.update!(User.registration_changeset(u, %{password: "temppass"}))
+      ...(4)> end
+     
+       
