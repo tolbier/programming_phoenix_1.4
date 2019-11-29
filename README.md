@@ -79,6 +79,7 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       MIX_ENV=test mix ecto.migrate
       
 * Insert elements through iex/mix console            
+
       $ iex -S mix 
       iex> alias Rumbl.Repo
       iex> alias Rumbl.Accounts.User
@@ -86,3 +87,6 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       iex> Repo.insert(%User{name: "Bruce", username: "redrapids"}) 
       iex> Repo.insert(%User{name: "Chris", username: "mccord"}) 
       
+* Obtain Dependencies
+
+      mix deps.get      
