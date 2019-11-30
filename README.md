@@ -107,3 +107,5 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       url:string title:string description:text
        
       $ mix ecto.migrate
+      $ mix ecto.rollback
+      $ mix ecto.migrate
