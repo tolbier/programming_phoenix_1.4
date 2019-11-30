@@ -106,3 +106,4 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       $ mix phx.gen.html Multimedia Video videos user_id:references:users \
       url:string title:string description:text
        
+      $ mix ecto.migrate
