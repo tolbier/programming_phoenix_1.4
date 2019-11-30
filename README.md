@@ -101,4 +101,8 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       ...(4)>   Repo.update!(User.registration_changeset(u, %{password: "temppass"}))
       ...(4)> end
      
+* Generating Web interfaces     
+     
+      $ mix phx.gen.html Multimedia Video videos user_id:references:users \
+      url:string title:string description:text
        
