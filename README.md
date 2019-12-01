@@ -115,3 +115,8 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       $ mix phx.gen.schema Multimedia.Category categories name:string
       $ mix ecto.gen.migration add_category_id_to_video
       $ mix ecto.migrate
+      
+* Run priv/repo/seeds.exs
+
+      $ mix run priv/repo/seeds.exs
+      
