@@ -109,3 +109,9 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       $ mix ecto.migrate
       $ mix ecto.rollback
       $ mix ecto.migrate
+
+* Generate the Multimedia.Category schema like this:
+
+      $ mix phx.gen.schema Multimedia.Category categories name:string
+      $ mix ecto.gen.migration add_category_id_to_video
+      $ mix ecto.migrate
